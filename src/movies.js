@@ -132,7 +132,7 @@ const moviesArray = [
   // Iteration 6: Alphabetic Order - Order by title and print the first 20 titles
   function orderAlphabetically(moviesArray) {
     const sortedMovies = moviesArray
-      .sort((a, b) =>  {return a.title.localeCompare(b.title)})
+      .sort((a, b) => a.title.localeCompare(b.title))
       .map(movie => movie.title);
   
     return sortedMovies.slice(0, 20);
